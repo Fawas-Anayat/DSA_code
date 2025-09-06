@@ -95,3 +95,55 @@ int main() {
 */
 
 //-------------------------------------------------------------------------
+//------------------------program 3----------------------------------------
+//WAP to reverse a number using the stack
+#include <iostream>
+#define MAX 50
+using namespace std;
+
+int arr[MAX];
+int top = -1;
+
+// Push into stack
+void push(int x) {
+    if (top == MAX - 1) {
+        cout << "Stack Overflow!" << endl;
+        return;
+    }
+    arr[++top] = x;
+}
+
+// Pop from stack
+int pop() {
+    if (top == -1) {
+        cout << "Stack Underflow!" << endl;
+        return -1;
+    }
+    return arr[top--];
+}
+
+int main() {
+    int num;
+    cout << "Enter a number: ";
+    cin >> num;
+
+    // Push digits
+    int temp = num;
+    while (temp > 0) {
+        push(temp % 10);  // push last digit
+        temp /= 10;
+    }
+
+    // Pop digits → correctly form reversed number
+    int reversed = 0;
+    int multiplier = 1;
+    while (top != -1) {
+        reversed += pop() * multiplier;
+        multiplier *= 10;
+    }
+
+    cout << "Original Number: " << num << endl;
+    cout << "Reversed Number: " << reversed << endl;
+
+    return 0;
+}
