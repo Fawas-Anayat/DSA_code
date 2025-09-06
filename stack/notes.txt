@@ -1,0 +1,10 @@
+"Stack"
+It works on the principle that last in first out
+
+Key Operations
+Stacks support a limited set of operations:
+-Push(x) → Add element x to the top of the stack.
+-Pop() → Remove and return the element at the top.
+-Peek() / Top() → View the element at the top without removing it.
+-isEmpty() → Check if the stack is empty.
+-isFull() (in case of fixed-size implementation, like arrays) → Check if the stack is full.
