@@ -1,5 +1,6 @@
+//----------program 1----------
 //the basic implementation of the stack using array
-#include <iostream>
+/*#include <iostream>
 #define MAX 50
 using namespace std;
 int arr[MAX];
@@ -33,4 +34,64 @@ int main()
     {
         cout<<arr[x]<<endl;
     }
+}*/
+//---------------------------------------------------------------------------
+
+//------------------------------program 2----------------------------------
+/*check whether a given string is palindrome or not
+#include <iostream>
+#define MAX 100
+using namespace std;
+
+char arr[MAX];
+int top = -1;
+
+// Push one character into stack
+void push(char c) {
+    if (top == MAX - 1) {
+        cout << "Stack overflow!" << endl;
+        return;
+    }
+    arr[++top] = c;
 }
+
+// Pop one character from stack
+char pop() {
+    if (top == -1) {
+        cout << "Stack underflow!" << endl;
+        return '\0'; // return null character
+    }
+    return arr[top--];
+}
+
+// Function to check palindrome
+bool isPalindrome(string st) {
+    // Push all characters into stack
+    for (int i = 0; i < st.length(); i++) {
+        push(st[i]);
+    }
+
+    // Compare string with stack (reverse order)
+    for (int i = 0; i < st.length(); i++) {
+        if (st[i] != pop()) {
+            return false; // mismatch → not palindrome
+        }
+    }
+    return true;
+}
+
+int main() {
+    string str;
+    cout << "Enter a string: ";
+    cin >> str;
+
+    if (isPalindrome(str))
+        cout << str << " is a Palindrome." << endl;
+    else
+        cout << str << " is NOT a Palindrome." << endl;
+
+    return 0;
+}
+*/
+
+//-------------------------------------------------------------------------
