@@ -8,3 +8,7 @@ Stacks support a limited set of operations:
 -Peek() / Top() → View the element at the top without removing it.
 -isEmpty() → Check if the stack is empty.
 -isFull() (in case of fixed-size implementation, like arrays) → Check if the stack is full.
+
+
+->Changing an element in a stack
+=>create an empty temporary stack and push the elements of the original stack into the temporary stack and then again we can push the elements from temporary stack to original stack but with the replacement of the element we want to replace.
