@@ -97,7 +97,7 @@ int main() {
 //-------------------------------------------------------------------------
 //------------------------program 3----------------------------------------
 //WAP to reverse a number using the stack
-#include <iostream>
+/*#include <iostream>
 #define MAX 50
 using namespace std;
 
@@ -147,3 +147,4 @@ int main() {
 
     return 0;
 }
+*/
