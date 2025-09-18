@@ -1,1 +1,3 @@
 Linked List:
+A linked list is a fundamental data structure that's a bit like a chain of nodes. Unlike an array, which stores elements in contiguous memory locations, a linked list stores them scattered throughout memory. Each node in the list holds two things: the data for that element and a pointer to the next node in the sequence.
+--it ensures the dynamic resizing and the efficient insertions and deletions
