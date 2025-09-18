@@ -1,3 +1,6 @@
 Linked List:
 A linked list is a fundamental data structure that's a bit like a chain of nodes. Unlike an array, which stores elements in contiguous memory locations, a linked list stores them scattered throughout memory. Each node in the list holds two things: the data for that element and a pointer to the next node in the sequence.
 --it ensures the dynamic resizing and the efficient insertions and deletions
+--We can easily traverse the nodes and their data.
+--generally the nodes are created as the structure of the cpp that two variables. One having the data and the second(being pointer) has the memory address of the next node and hence we can easily link all the nodes
+--Unlik arrays,in linked list all the nodes are actually not the contagious memory locations
