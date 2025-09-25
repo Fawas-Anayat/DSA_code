@@ -54,7 +54,7 @@ void insert_at_position(node*& head, int pos, int value) {
     }
 
     if (temp == NULL) {
-        cout << "Positio n out of range!" << endl;
+        cout << "Position out of range!" << endl;
         delete newnode;
         return;
     }
