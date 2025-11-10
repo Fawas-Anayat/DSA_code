@@ -6,13 +6,21 @@ struct Node {
     int data;
     Node* next;
     Node* prev;
+
+    // Node(int val){
+    //     Node*newnode = new Node;
+    //     newnode->data = val;
+    //     newnode->next = newnode->prev = NULL ;
+
+
+    // }
 };
 
 Node* head = NULL;  // Global head pointer
 
 // Create a new node
 Node* createNode(int data) {
-    Node* newNode = new Node;
+    Node* newNode = new Node();
     newNode->data = data;
     newNode->next = newNode->prev = NULL;
     return newNode;
