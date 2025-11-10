@@ -1,4 +1,6 @@
- #include <iostream>
+// circular double linked list
+
+#include <iostream>
 using namespace std;
 
 // ------------------------------------
